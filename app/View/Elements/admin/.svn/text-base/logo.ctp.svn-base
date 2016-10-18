@@ -1,0 +1,3 @@
+<?php
+    echo $html->image('theme_footer_logo_junta.png', array('alt'=>__('Inicio Panel de Control', true)), '/control');
+?>

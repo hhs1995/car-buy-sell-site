@@ -1,0 +1,42 @@
+<div id="nav">
+    <ul class="sf-menu">
+        <li>
+            <a href="#"><span class="ui-icon ui-icon-home"></span><?php __('Partidas'); ?></a>
+ 			<ul>
+               <li><?php echo $html->link('<span class="ui-icon ui-icon-document"></span>' . __('Lista', true), array('plugin' => 0, 'controller' => 'partidas', 'action' => 'index'), array('escape' => false)); ?></li>
+ 			</ul>
+        </li>
+
+        <li>
+            <a href="#"><span class="ui-icon ui-icon-home"></span><?php __('Jugadores'); ?></a>
+ 			<ul>
+               <li><?php echo $html->link('<span class="ui-icon ui-icon-document"></span>' . __('Jugadores', true), array('plugin' => 0, 'controller' => 'jugadores', 'action' => 'index'), array('escape' => false)); ?></li>
+               <!--<li><?php echo $html->link('<span class="ui-icon ui-icon-plus"></span>' . __('Agregar jugador', true), array('plugin' => 0, 'controller' => 'jugadores', 'action' => 'add'), array('class' => 'separator', 'escape' => false)); ?></li>-->
+               <li><?php echo $html->link('<span class="ui-icon ui-icon-document"></span>' . __('Equipos', true), array('plugin' => 0, 'controller' => 'equipos', 'action' => 'index'), array('escape' => false)); ?></li>
+               <!--<li><?php echo $html->link('<span class="ui-icon ui-icon-plus"></span>' . __('Agregar equipo', true), array('plugin' => 0, 'controller' => 'equipos', 'action' => 'add'), array('class' => 'separator', 'escape' => false)); ?></li>-->
+ 
+ 			</ul>
+        </li>
+
+        <li>
+            <a href="#"><span class="ui-icon ui-icon-cart"></span><?php __('Juegos'); ?></a>
+            <ul>
+                <li><?php echo $html->link('<span class="ui-icon ui-icon-document"></span>' . __('Juegos', true), array('plugin' => 0, 'controller' => 'juegos', 'action' => 'index'), array('escape' => false)); ?></li>
+               <!-- <li><?php echo $html->link('<span class="ui-icon ui-icon-plus"></span>' . __('Agregar juego', true), array('plugin' => 0, 'controller' => 'juegos', 'action' => 'add'), array('class' => 'separator','escape' => false)); ?></li>
+               <li><?php echo $html->link('<span class="ui-icon ui-icon-document"></span>' . __('Categorias', true), array('plugin' => 0, 'controller' => 'categorias', 'action' => 'index'), array('escape' => false)); ?></li>
+               <li><?php echo $html->link('<span class="ui-icon ui-icon-plus"></span>' . __('Agregar categoria ', true), array('plugin' => 0, 'controller' => 'categorias', 'action' => 'add'), array('class' => 'separator', 'escape' => false)); ?></li>
+               <li><?php echo $html->link('<span class="ui-icon ui-icon-document"></span>' . __('Niveles', true), array('plugin' => 0, 'controller' => 'niveles', 'action' => 'index'), array('escape' => false)); ?></li>
+               <li><?php echo $html->link('<span class="ui-icon ui-icon-plus"></span>' . __('Agregar nivel', true), array('plugin' => 0, 'controller' => 'niveles', 'action' => 'add'), array('class' => 'separator', 'escape' => false)); ?></li>-->
+            </ul>
+        </li>
+
+
+        <li>
+            <a href="#"><span class="ui-icon ui-icon-person"></span><?php __('Administradores'); ?></a>
+            <ul>
+                <li><?php echo $html->link('<span class="ui-icon ui-icon-document"></span>' . __('Lista', true), array('plugin' => 0, 'controller' => 'admins', 'action' => 'index'), array('escape' => false)); ?></li>
+                <li><?php echo $html->link('<span class="ui-icon ui-icon-plus"></span>' . __('Agregar', true), array('plugin' => 0, 'controller' => 'admins', 'action' => 'add'), array('escape' => false)); ?></li>
+            </ul>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,86 @@
+<?php
+    if (isset($this->params['named']['filter'])) {
+        $html->scriptBlock('var filter = 1;', array('inline' => false));
+    }
+?>
+<div class="filter">
+<?php
+    echo $form->create('Filter', array('url'=>array('controller'=>'notas', 'action'=>'index')));
+?>
+	<div style="float:left; padding-right:20px">
+<?php
+
+    $filterDenom = '';
+    if (isset($filters['titulo'])) {
+		$filterDenom = $filters['titulo'];
+    }
+    echo $form->input('Filter.titulo', array(
+    	'label'=>__('Titulo', true), 
+		'value'=>$filterDenom,
+		'size'=>'34'
+    ));
+    
+?>
+	</div>
+	
+	<div style="float:left; padding-right:20px">
+<?php
+	$filterCategoria = '';
+    if (isset($filters['categoria_id'])) {
+        $filterCategoria = $filters['categoria_id'];
+    }
+	//$filtro_marcas[0]='';
+	echo $form->input('Filter.categoria_id', array(
+		'label'=>__('Categoria', true), 
+		'options'=>$categorias,
+		'empty'=>true,
+		'value'=>$filterCategoria
+	));
+?>
+	</div>
+	
+	<div style="float:left; padding-right:20px">
+<?php
+	$filterDestacado = '';
+    if (isset($filters['destacado'])) {
+        $filterDestacado = $filters['destacado'];
+    }
+    echo $form->input('Filter.destacado', array(
+        'label' => __('Destacado', true),
+        'options' => array(
+            '1' => __('Si', true),
+            '0' => __('No', true),
+        ),
+        'empty' => true,
+        'value' => $filterDestacado,
+    ));
+?>
+	</div>
+	
+	<div style="float:left; padding-right:20px">
+<?php    
+    $filterStatus = '';
+    if (isset($filters['habilitado'])) {
+        $filterStatus = $filters['habilitado'];
+    }
+    echo $form->input('Filter.habilitado', array(
+        'options' => array(
+            '1' => __('Habilitado', true),
+            '0' => __('No habilitado', true),
+        ),
+        'empty' => true,
+        'value' => $filterStatus,
+    ));
+?>
+	</div>
+	<div class="clear"></div>
+<?php
+	//echo $form->submit('Limpiar filtro', array('style'=>'float:left;width:150px'));
+	echo $form->submit('Filtrar', array('style'=>'float:left;width:100px'));
+	//echo $form->hidden('limpiar',array('value' => 'false','id' => 'limpiarId'));
+	//echo $form->submit('Limpiar filtros',array('action' => 'limpiar','onClick' => 'limpiar()'));
+?>
+	<div class="clear"></div>
+<?php
+    echo $form->end();?>
+</div>

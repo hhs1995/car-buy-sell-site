@@ -1,0 +1,28 @@
+﻿/*Vista Previa Plan*/
+.listado-planes .item{
+	font-family:Arial!important;
+}
+
+
+.listado-planes .item h2{
+	border:none!important;
+	margin-bottom:0px!important;
+	width:270px!important;
+	height:28px!important;
+	overflow:hidden!important;
+}
+
+.listado-planes .item h2 a{
+	font-size:18px!important;
+	font-weight:bold!important;
+	padding-right:0px!important;
+	line-height:21px!important;
+}
+
+.listado-planes .item h2 a:hover{
+	text-decoration:none;
+}
+
+.listado-planes .item .volanta{
+	line-height:10px!important;
+}	

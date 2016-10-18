@@ -1,0 +1,1 @@
+<?php echo $this->Html->link('Tu Plan a tu medida', array('controller'=>'planes', 'action'=>'a_tu_medida'), array('title'=>'', 'id'=>'banner-grande','class'=>'banner-grande','style'=>'font-size: 0px;')); ?>

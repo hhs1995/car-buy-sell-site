@@ -1,0 +1,9 @@
+CREATE TABLE `tuplanya`.`textosdinamicos` (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`created` DATETIME NOT NULL ,
+`modified` DATETIME NULL ,
+`deleted` DATETIME NULL ,
+`nombre` VARCHAR( 128 ) NOT NULL ,
+`valor` TEXT NOT NULL ,
+INDEX ( `nombre` )
+) ENGINE = MYISAM ;

@@ -1,0 +1,19 @@
+<div class="admins login form">
+    <?php echo $form->create('Admin', array('url' => array('controller' => 'admins', 'action' => 'login')));?>
+        <fieldset>
+        <?php
+            echo $form->input('username', array('label'=>'Nombre de usuario'));
+            echo $form->input('password', array('label'=>'Clave'));
+        ?>
+        </fieldset>
+    <?php /*
+        echo $html->link(__('Olvido su contrase–a?', true), array(
+            'control' => false,
+            'controller' => 'admins',
+            'action' => 'forgot',
+        ), array(
+            'class' => 'forgot',
+        )); */
+        echo $form->end(__('Ingresar', true));
+    ?>
+</div>

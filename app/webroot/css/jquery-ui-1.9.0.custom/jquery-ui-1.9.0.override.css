@@ -1,0 +1,52 @@
+﻿/*TABS*/
+.ui-widget{
+	border:none!important;
+	background:none!important;
+	font-family:"Arial"!important;
+}
+
+.tab-menu-plan{
+	background:none!important;
+	border:none!important;
+}
+
+.ui-tabs .ui-tabs-nav li {
+	background:none!important;
+	border:none!important;
+}
+
+.tab-menu-plan li{
+	background:none!important;
+	border: none!important;	
+}
+
+.tab-menu-plan li a{
+	font-size:12px!important;
+	font-weight:bold;
+	font-family:Arial!important;
+}
+
+.tab-menu-plan li.ui-tabs-selected{
+	
+    -moz-border-radius: 2px!important;
+    -webkit-border-radius: 2px!important;
+    -khtml-border-radius: 2px!important;
+    border-radius: 2px!important;	
+	color:#585858!important;
+	background-color: #fbc900!important;
+}
+
+.tab-menu-plan li a{
+	border: none;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+	background: none;
+	color:#585858;
+}
+
+.ui-tabs .ui-tabs-panel{
+	padding:0!important;
+}
+

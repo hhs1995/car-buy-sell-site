@@ -1,0 +1,16 @@
+<div class="users form">
+    <h2><?php __('Agregar Administrador'); ?></h2>
+    <?php echo $form->create('Admin');?>
+    <fieldset>
+    <?php
+//        echo $form->input('rol', array('options'=>$roles));
+        echo $form->input('username', array('label'=>'Nombre de usuario'));
+        echo $form->input('password', array('label'=>'Clave'));
+        echo $form->input('nombre', array('label'=>'Nombre'));
+        echo $form->input('apellido', array('label'=>'Apellido'));
+        echo $form->input('email');
+        echo $form->input('habilitado');
+    ?>
+    </fieldset>
+    <?php echo $form->end('Crear');?>
+</div>

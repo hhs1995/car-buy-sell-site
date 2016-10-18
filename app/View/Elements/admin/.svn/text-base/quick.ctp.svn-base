@@ -1,0 +1,59 @@
+<div id="quick">
+<div>
+	<?php
+		if( $session->read('Admin') != null) { 
+			echo __("Usuario: ", true) . $session->read('Admin.nombre').' '.$session->read('Admin.apellido').' ('.$session->read('Admin.username').')'; 
+			echo " | " . $html->link(__("Salir", true).'', array('plugin' => 0, 'controller' => 'admins', 'action' => 'logout'));
+		}
+	?>
+</div>
+<script language="javascript">
+/*
+cambio = {}
+
+cambio.guardar = function(){
+	var nuevoCambio = $('#inputCambio').val()
+	if(nuevoCambio > 0){
+		var params = {'data[Cambio][cotizacion]': nuevoCambio}
+		var url = '<?php echo Router::url(array('controller'=>'cambios', 'action'=>'add')) ?>'
+		$.post(url, params, function(data){
+			if(data.resultado == <?php echo JSON_RESULT_EXITO?>){
+				$('#contenedorInputCambio').hide(); 
+				$('#contenedorDatosCambio').show();
+				$('#valorCambio').html(data.cambio);
+			}
+		}, 'json')
+
+	}
+
+
+	
+}
+
+$(document).ready(function(){
+		var url = '<?php echo Router::url(array('controller'=>'cambios', 'action'=>'index')) ?>'
+		$.post(url, null, function(data){
+			if(data.resultado == <?php echo JSON_RESULT_EXITO?>){
+				$('#valorCambio').html(data.cambio);
+					$('#inputCambio').val(data.cambio)
+
+				}
+
+		},'json')
+
+	})
+*/
+</script>
+<!--
+<div id="cambio">
+	<div>
+	<span id="contenedorDatosCambio">
+		US$ 1 = $<span id="valorCambio"></span> [<a href="javascript:void(0)" title="Modificar" onclick="$('#contenedorDatosCambio').hide();$('#contenedorInputCambio').show()">+</a>]
+	</span>
+	<span id="contenedorInputCambio" style="display:none">
+		<input id="inputCambio" type="text"  size="4" maxlength="6" value=""/> [<a href="javascript:void(0)" onclick="cambio.guardar()">Guardar</a>] [<a title="Cancelar" href="javascript:void()" onclick="$('#contenedorInputCambio').hide(); $('#contenedorDatosCambio').show();">x</a>]
+	</span>
+    </div>	
+</div>
+-->	
+</div>

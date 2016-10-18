@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repo/!svn/ver/151/eggcelent-app/views/admins
+END
+view.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repo/!svn/ver/151/eggcelent-app/views/admins/view.ctp
+END
+admin_reset_password.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repo/!svn/ver/151/eggcelent-app/views/admins/admin_reset_password.ctp
+END
+forgot.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repo/!svn/ver/151/eggcelent-app/views/admins/forgot.ctp
+END
+reset.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repo/!svn/ver/151/eggcelent-app/views/admins/reset.ctp
+END
+control_edit.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repo/!svn/ver/151/eggcelent-app/views/admins/control_edit.ctp
+END
+control_index.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repo/!svn/ver/151/eggcelent-app/views/admins/control_index.ctp
+END
+index.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repo/!svn/ver/151/eggcelent-app/views/admins/index.ctp
+END
+add.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repo/!svn/ver/151/eggcelent-app/views/admins/add.ctp
+END
+control_add.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repo/!svn/ver/151/eggcelent-app/views/admins/control_add.ctp
+END
+control_login.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repo/!svn/ver/151/eggcelent-app/views/admins/control_login.ctp
+END
+login.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repo/!svn/ver/151/eggcelent-app/views/admins/login.ctp
+END

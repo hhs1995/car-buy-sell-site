@@ -1,0 +1,31 @@
+﻿img{
+	border:none;
+}
+
+.boton-busqueda-avanzada .boton{
+	background-image:none!important;
+	background:none!important;
+}
+
+.btn-volver .boton{
+	background: #fbc900!important;
+}
+
+.static-page .header ul.header-menu li{  
+    border-right: 1px solid #cb7e02;	
+}
+
+/*jquery html5 Form para explorer*/
+#response{
+	font-family:Arial!important;
+	font-weight:bold;
+	color:#3f3f3f;
+	margin:10px 15px;
+	font-size:14px;
+}
+
+.canje .formulario-consulta{
+	padding-top:15px;
+	padding-bottom:35px;
+}
+

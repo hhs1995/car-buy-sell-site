@@ -1,0 +1,66 @@
+<?php
+    if (isset($this->params['named']['filter'])) {
+        $html->scriptBlock('var filter = 1;', array('inline' => false));
+    }
+?>
+<div class="filter">
+<?php
+    echo $form->create('Filter', array('url'=>array('controller'=>'partidas', 'action'=>'index')));
+    
+    echo $form->input('enviando', array('type'=>'hidden', 'value'=>1));
+?>
+	<div style="float:left; padding-right:20px">
+<?php
+
+    $filterDenom = '';
+    if (isset($filters['jugador'])) {
+		$filterDenom = $filters['jugador'];
+    }
+    echo $form->input('Filter.jugador', array(
+    	'label'=>__('Jugador', true), 
+		'value'=>$filterDenom,
+		'size'=>'34'
+    ));
+    
+?>
+	</div>
+	
+	<div style="float:left; padding-right:20px">
+<?php
+    $filterStatus = '';
+    if (isset($filters['nivel'])) {
+        $filterStatus = $filters['nivel'];
+    }
+    echo $form->input('Filter.nivel', array(
+        'options' => $niveles,
+        'empty' => true,
+        'value' => $filterStatus,
+    ));
+?>
+	</div>
+
+	<div style="float:left; padding-right:20px">
+<?php    
+    $filterStatus = '';
+    if (isset($filters['estado'])) {
+        $filterStatus = $filters['estado'];
+    }
+    echo $form->input('Filter.estado', array(
+        'options' => $estados,
+        'empty' => true,
+        'value' => $filterStatus,
+    ));
+?>
+	</div>
+
+	<div class="clear"></div>
+<?php
+	//echo $form->submit('Limpiar filtro', array('style'=>'float:left;width:150px'));
+	echo $form->submit('Filtrar', array('style'=>'float:left;width:100px'));
+	//echo $form->hidden('limpiar',array('value' => 'false','id' => 'limpiarId'));
+	//echo $form->submit('Limpiar filtros',array('action' => 'limpiar','onClick' => 'limpiar()'));
+?>
+	<div class="clear"></div>
+<?php
+    echo $form->end();?>
+</div>
